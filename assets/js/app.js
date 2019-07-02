@@ -1,6 +1,6 @@
 const $ = require('jquery');
 function backHome(){
-  document.location="/";
+  document.location="/portal";
 }
 $('#btn-thanks').on('click', (event)=>{
   console.log('aqui');
