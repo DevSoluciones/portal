@@ -6,7 +6,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry:{
-          app:['./assets/js/vendor/what-input.js','./assets/js/vendor/foundation.min.js','./assets/js/app.js','./assets/css/app.scss']
+          app:['./assets/js/vendor/what-input.js','./assets/js/vendor/foundation.smoothScroll.js','./assets/js/vendor/foundation.core.js','./assets/js/vendor/foundation.magellan.js','./assets/js/vendor/foundation.min.js','./assets/js/app.js','./assets/css/app.scss']
          },
   output: {
     path: path.resolve(__dirname,'dist'),
