@@ -40,4 +40,3 @@ $("#email_form").on('formvalid.zf.abide', function(e) {
      });
   });
 });
-
