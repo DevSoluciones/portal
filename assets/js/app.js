@@ -3,7 +3,6 @@ function backHome(){
   document.location="/portal";
 }
 $('#btn-thanks').on('click', (event)=>{
-  console.log('aqui');
   event.preventDefault();
   backHome();
 });
