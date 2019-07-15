@@ -37,6 +37,20 @@ label {
 .btn-rounded {
   border-radius: 24px; }
 
+.call {
+  background-color: rgba(255, 123, 71, 0.8);
+  color: #fff;
+  width: auto;
+  margin-top: 0.5em; }
+
+.call:active, .call:visited, .call:link {
+  background-color: rgba(255, 123, 71, 0.8);
+  color: #fff; }
+
+.call:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff; }
+
 .btn-rounded-expanded {
   border-radius: 42px; }
   .btn-rounded-expanded .btn-thanks {
@@ -126,7 +140,9 @@ a:hover, a:focus {
 
 @media screen and (max-width: 768px) {
   .width-full {
-    min-height: 0vh !important; } }
+    min-height: 0vh !important; }
+  .margin-1 {
+    margin: 0px; } }
 
 @media screen and (max-width: 411px) {
   .label.secondary {

@@ -1,9 +1,8 @@
 const $ = require('jquery');
 function backHome(){
-  document.location="/";
+  document.location="/portal";
 }
 $('#btn-thanks').on('click', (event)=>{
-  console.log('aqui');
   event.preventDefault();
   backHome();
 });
@@ -41,3 +40,13 @@ $("#email_form").on('formvalid.zf.abide', function(e) {
   });
 });
 
+$(document)
+  // field element is invalid
+  .on("invalid.zf.abide", function(ev,elem) {
+    document.getElementById(ev.target.id+'Error').classList.add('is-visible');
+  })
+  .on("valid.zf.abide", function(ev,elem) {
+    const idName = ev.target.id;
+    if(document.getElementById(idName).checkValidity() && document.getElementById(idName+'Error'))
+      document.getElementById(idName+'Error').classList.remove('is-visible');
+  })
